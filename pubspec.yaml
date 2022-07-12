@@ -14,8 +14,12 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+  # For State Management
+  provider: ^6.0.3
+
   # For Network
   http: ^0.13.4
+  dio: ^4.0.6
 
   # For UI
   flutter_staggered_grid_view: ^0.6.2
