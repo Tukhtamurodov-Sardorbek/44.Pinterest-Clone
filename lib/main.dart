@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 import 'package:flutter/services.dart';
+import 'package:pinterest/pages/home/provider.dart';
+import 'package:pinterest/pages/home/view.dart';
+import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 void main() async {
@@ -32,12 +35,9 @@ void main() async {
         enableLoadingWhenFailed : true,         // In the case of load failure, users can still trigger more loads by gesture pull-up.
         hideFooterWhenNotFull: false,           // Disable pull-up to load more functionality when Viewport is less than one screen
         enableBallisticLoad: true,              // trigger load more by BallisticScrollActivity
-        child: MaterialApp(
+        child: const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: const HomePage(),
-          routes: {
-            PostView.id: (coontext) => PostView(),
-          },
+          home: HomePage(),
         ),
     ),
   );
