@@ -1,0 +1,74 @@
+name: pinterest
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # For Network
+  http: ^0.13.4
+
+  # For UI
+  flutter_staggered_grid_view: ^0.6.2
+
+  # For UI
+  cached_network_image: ^3.2.1
+
+  # For pagination & updating
+  pull_to_refresh: ^2.0.0
+
+  # For UI
+  font_awesome_flutter: ^10.1.0
+
+  # For
+  image_gallery_saver: ^1.7.1
+
+  # For
+  permission_handler: ^10.0.0
+
+  # For
+  path_provider: ^2.0.11
+
+  # For
+  image_picker: ^0.8.5+3
+
+  # For
+  lottie: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/local/
+    - assets/cache/
+    - assets/lottie/
+    - assets/readme/
+    - assets/icons/bottom_sheet_icons/
+    - assets/icons/on_long_press_pin_icons/
+    - assets/icons/no_internet_connection/
+    - assets/icons/other_materials/
+
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
